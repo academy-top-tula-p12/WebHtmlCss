@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            transition: 2s;
+        }
+
+        .f1:hover{
+            filter: blur(3px);
+        }
+
+        .f2:hover{
+            filter:brightness(0%);
+        }
+        .f3:hover{
+            filter:hue-rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <img src="cat.png" alt="" class="f1">
+    <img src="cat.png" alt="" class="f2">
+    <img src="cat.png" alt="" class="f3">
+</body>
+</html>

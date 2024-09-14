@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        background-color: antiquewhite;
+        border: thin black solid;
+      }
+      .one {
+        left: 50px;
+        top: 50px;
+        background-color: blueviolet;
+        z-index: 5;
+      }
+      .two {
+        left: 100px;
+        top: -150px;
+        background-color: chartreuse;
+        z-index: 3;
+      }
+      .three {
+        left: 150px;
+        top: -350px;
+        z-index: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="three">3</div>
+  </body>
+</html>

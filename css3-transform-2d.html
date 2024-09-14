@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box1{
+            position: relative;
+            left: 100px;
+            top: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+
+            /* transform: translate(50px, 60px); */
+            /* transform: scale(2, 0.5); */
+
+            transition: transform 2s;
+            
+        }
+
+        .box1:hover{
+            transform: rotate(360deg);
+            /* transform-origin: top left; */
+        }
+
+        .box2{
+            position: relative;
+            left: 100px;
+            top: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(105, 220, 235);
+
+            transition: 2s;
+
+            transform-style: flat;
+        }
+
+        .box2:hover{
+            transform-style: flat;
+            perspective: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box2"></div>
+</body>
+</html>

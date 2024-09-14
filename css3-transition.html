@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tr1{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+
+            /* transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: linear;
+            transition-delay: 1s;
+
+            transition: height 2s ease-in, width 1s linear; */
+
+            transition: box-shadow 2s;
+        }
+
+        .tr1:hover{
+
+
+            box-shadow: 4px 4px 2px 0 #333;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border-width: 5px;
+            border-color: greenyellow;
+
+            transition: border-radius 2s;
+
+            background-image: url("cat.png");
+            background-size: cover;
+        }
+
+        .box2:hover{
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box2"></div>
+</body>
+</html>
