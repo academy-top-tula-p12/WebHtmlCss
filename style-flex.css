@@ -1,0 +1,70 @@
+body{
+    font-family: "Calibri";
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+
+    background-color: antiquewhite;
+}
+
+.main-header{
+    background-color: aquamarine;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.logo{
+    flex-basis: 200px;
+    background-image: url("logo01.png");
+    background-color: brown;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:contain;
+}
+
+.main-menu{
+    flex-grow: 1;
+    display: flex;
+    justify-content: right;
+
+}
+
+.main-menu ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    font-size: 26px;
+}
+
+.main-menu li{
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: darkcyan;
+}
+
+main{
+    background-color: cornflowerblue;
+    display: flex;
+
+    height: 400px;
+}
+
+.content{
+    /* width: 70%; */
+    flex-grow: 7;
+    background-color: blueviolet;
+}
+
+.content-aside{
+    /* width: 30%; */
+    flex-grow: 3;
+    background-color: crimson;
+}
+
+footer{
+    background-color: greenyellow;
+}

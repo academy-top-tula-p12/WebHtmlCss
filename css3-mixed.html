@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            position: relative;
+            text-align: center;
+            margin: auto;
+            width: fit-content;
+
+            
+        }
+
+        .wrap img{
+            display: block;
+            position: relative;
+            width: 250px;
+            height: 250px;
+            left: -20%;
+        }
+
+        .wrap:hover img{
+            left: 0;
+        }
+
+        .mix-color{
+            background-color: blue;
+            position: relative;
+            margin: -100% auto 0;
+            width: 250px;
+            height: 250px;
+
+            mix-blend-mode: screen;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <img src="cat.png" alt="">
+        <div class="mix-color"></div>
+    </div>
+</body>
+</html>

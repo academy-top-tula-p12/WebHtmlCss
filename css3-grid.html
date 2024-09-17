@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-rows: 100px 80% 150px;
+            grid-template-columns: 30% 40% 30%; */
+
+            /* grid-template-rows: repeat(5, 1fr);
+            grid-template-columns: repeat(4, 1fr); */
+
+            grid-template-rows: 1fr 2fr 2fr 1fr;
+            grid-template-columns: 3fr 1fr;
+
+            /* grid-template-areas: "header header" 
+                                 "content sidebar"
+                                 "content sidebar"
+                                 "footer footer"; */
+
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+
+            header{
+                /* grid-area: header; */
+                grid-column-start: 1;
+                grid-column-end: 3;
+
+                grid-row-start: 1;
+                grid-row-end: 2;
+
+                background-color: blue;
+            }
+
+            main{
+                grid-column-start: 1;
+                grid-column-end: 2;
+
+                grid-row-start: 2;
+                grid-row-end: 4;
+
+                /* grid-area: content; */
+                background-color: brown;
+            }
+
+            aside{
+                grid-column-start: 2;
+                grid-column-end: 3;
+
+                grid-row-start: 2;
+                grid-row-end: 4;
+
+                /* grid-area: sidebar; */
+                background-color: aqua;
+            }
+
+            footer{
+                grid-column-start: 1;
+                grid-column-end: 3;
+
+                grid-row-start: 4;
+                grid-row-end: 5;
+
+                /* grid-area: footer; */
+                background-color: red;
+            }
+
+            border: 2px solid black;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <main></main>
+        <aside></aside>
+        <footer></footer>
+    </div>
+</body>
+</html>
